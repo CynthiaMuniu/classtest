@@ -1,0 +1,28 @@
+public class SixthActivity extends AppCompatActivity {
+    Button button1,button2;
+    EditText editText1,editText2;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_sixth);
+        button1= (Button) findViewById(R.id.btn);
+        button2= (Button) findViewById(R.id.btn2);
+        editText1= (EditText) findViewById(R.id.edit);
+        editText2= (EditText) findViewById(R.id.edit2);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sms();
+            }
+        });
+    }
+
+    private void sms() {
+        String number=editText1.getText().toString();
+        String message=editText2.getText().toString();
+        SmsManager manager=SmsManager.getDefault();
+        manager.sendTextMessage(number,null,message,null,null);
+        Toast.makeText(getApplicationContext(),"Messge sent succesfully",Toast.LENGTH_LONG).show();
+    }
+}

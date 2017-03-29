@@ -1,0 +1,40 @@
+
+    <CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendarView2"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text=" MY MAP MY AREA"
+        android:textColor="#12f"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+
+        android:textColor="#12f"
+        android:textSize="20dp"
+        android:text="ACCESS LOCALITY"
+        android:layout_below="@+id/calendarView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#12f"
+        android:id="@+id/btn2"
+        android:text="Previous"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />

@@ -1,0 +1,45 @@
+ <CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:accessibilityLiveRegion="assertive"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/calendarView3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:textColor="#12f"
+        android:text="SEND MESSAGE"
+        android:layout_marginBottom="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/edit" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#12f"
+        android:id="@+id/btn2"
+        android:text="Previous"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit"
+        android:textColor="#12f"
+        android:text="Enter phone number"
+        android:layout_above="@+id/edit2"
+        android:layout_toEndOf="@+id/btn2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit2"
+        android:text="Write message"
+        android:textColor="#12f"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/calendarView3"
+        android:layout_alignStart="@+id/edit" />

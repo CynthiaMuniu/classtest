@@ -1,0 +1,23 @@
+public class FifthActivity extends AppCompatActivity {
+   Button button1,button2;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_fifth);
+        button1= (Button) findViewById(R.id.btn);
+        button2= (Button) findViewById(R.id.btn2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(FifthActivity.this,SecondActivity.class));
+            }
+        });
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse(""));
+                startActivity(intent);
+            }
+        });
+    }
+}

@@ -1,0 +1,36 @@
+public class FourthActivity extends AppCompatActivity {
+    Button button1,button2;
+    EditText editText;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_fourth);
+        button1= (Button) findViewById(R.id.button);
+        button2= (Button) findViewById(R.id.btn2);
+        editText= (EditText) findViewById(R.id.edit);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(FourthActivity.this,SecondActivity.class));
+            }
+        });
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                call();
+            }
+
+
+        });
+    }
+
+    private void call() {
+        String kol=editText.getText().toString();
+        Intent myIntent=new Intent(Intent.ACTION_CALL);
+        myIntent.setData(Uri.parse("tel:"+kol));
+        startActivity(myIntent);
+    }
+
+
+}

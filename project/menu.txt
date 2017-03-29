@@ -1,0 +1,24 @@
+<item android:id="@+id/call"
+          android:title="Call"
+          android:icon="@drawable/call"
+          app:showAsAction="always">
+
+
+
+    </item>
+    <item android:id="@+id/map"
+        android:title="Map"
+        android:icon="@drawable/map"
+        app:showAsAction="always">
+
+
+
+    </item>
+    <item android:id="@+id/message"
+        android:title="Map"
+        android:icon="@drawable/message"
+        app:showAsAction="always">
+
+
+
+    </item>

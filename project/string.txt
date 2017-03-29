@@ -1,0 +1,14 @@
+ <string name="Select">Select others</string>
+    <string-array name="others">
+        <item>chat</item>
+        <item>settings</item>
+        <item>share</item>
+        <item>status</item>
+        <item>about place</item>
+        <item>camera</item>
+        <item>people</item>
+        <item>exit</item>
+
+
+
+    </string-array>
